@@ -79,9 +79,14 @@ export default defineConfig((config) => {
         '**/cypress/**',
         '**/.{idea,git,cache,output,temp}/**',
         '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build}.config.*',
-        '**/tests/preview/**', // Exclude preview tests that require Playwright
+        '**/tests/preview/**',
       ],
     },
+
+    // ✅ ADD THIS BLOCK
+    server: {
+      allowedHosts: ["bolt-diy-kns3.onrender.com"]
+    }
   };
 });
 
@@ -109,4 +114,5 @@ function chrome129IssuePlugin() {
       });
     },
   };
-}
+    }
+      
