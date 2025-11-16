@@ -85,7 +85,7 @@ export default defineConfig((config) => {
 
     // ✅ ADD THIS BLOCK
     server: {
-      allowedHosts: ["bolt-diy-kns3.onrender.com"]
+      allowedHosts: ["boltdiy-production-1dd6.up.railway.app"]
     }
   };
 });
